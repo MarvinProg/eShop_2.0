@@ -1,5 +1,6 @@
 function hellow_user() {
-  let v = window.localStorage.getItem('ddd');
-  window.localStorage.setItem('ddd', 323);
+  let v = window.localStorage.getItem('cc');
+  v = v * 1 + 1;
+  window.localStorage.setItem('cc', v);
   alert(v);
 }
