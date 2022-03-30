@@ -1,2 +1,5 @@
 <h2>Добро пожаловать в Интернет магазин</h2>
+<% @products.each do |p| %>
+  <%= p.product_name%>
+<% end %>
 <button type="button" class="btn btn-primary" onclick="hellow_user()">Отправить</button>
