@@ -4,3 +4,7 @@ function hellow_user() {
   window.localStorage.setItem('cc', v);
   alert(v);
 }
+
+function add_to_cart(id) {
+  alert(`Add to cart produc with id: ${id}`);
+}
