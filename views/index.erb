@@ -1,17 +1,17 @@
 <h2>Добро пожаловать в Интернет магазин</h2>
 <div class="row">
-  <% @products.each do |p| %>
+  <% @products.each do |product| %>
     <div class="col col-md-3">
-      <div><p>Name: <%= p.product_name%></p></div>
-      <div><p><img class="image__products" src="<%= p.path_to_image%>"></p></div>
-      <div><p>Specification: <%= p.specification%></p></div>
-      <div><p>Price: <%= p.product_price%> rub.</p></div>
-      <div><p>Size: <%= p.product_size%></p></div>
-      <div><p>Spicy: <%= p.is_spicy%></p></div>
-      <div><p>Veg: <%= p.is_veg%></p></div>
-      <div><p>Best offer: <%= p.is_best_offer%></p></div>
+      <div><p>Name: <%= product.product_name%></p></div>
+      <div><p><img class="image__products" src="<%= product.path_to_image%>"></p></div>
+      <div><p>Specification: <%= product.specification%></p></div>
+      <div><p>Price: <%= product.product_price%> rub.</p></div>
+      <div><p>Size: <%= product.product_size%></p></div>
+      <div><p>Spicy: <%= product.is_spicy%></p></div>
+      <div><p>Veg: <%= product.is_veg%></p></div>
+      <div><p>Best offer: <%= product.is_best_offer%></p></div>
       <br>
-      <button type="button" class="btn btn-success btn-sm" onclick="add_to_cart(<%= p.id %>)">Добавить в корзину</button>
+      <button type="button" class="btn btn-success btn-sm" onclick="add_to_cart(<%= product.id %>)">Добавить в корзину</button>
     </div>
   <% end %>
 </div>

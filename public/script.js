@@ -6,5 +6,9 @@ function hellow_user() {
 }
 
 function add_to_cart(id) {
-  alert(`Add to cart produc with id: ${id}`);
+  // alert(`Add to cart produc with id: ${id}`);
+  let key = 'product_' + id;
+  let x = window.localStorage.getItem(key);
+  x = x * 1 + 1;
+  window.localStorage.setItem(key, x);
 }
