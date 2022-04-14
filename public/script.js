@@ -28,3 +28,17 @@ function get_number_items_in_cart() {
 
   return count;
 }
+
+function get_orders_cart() {
+  let orders = '';
+  for(let item = 0; window.localStorage.length; item++) {
+    let key = window.localStorage.key(item);
+    let value = window.localStorage.getItem(key);
+
+    if (key.indexOf('product_') == 0) {
+      orders = orders + key + "=" + value + ',';
+    }
+  }
+
+  return orders;
+}
