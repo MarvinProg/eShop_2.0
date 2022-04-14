@@ -19,3 +19,7 @@ end
 get '/about_us' do 
 	erb :about_us
 end
+
+post '/cart' do 
+	erb :cart
+end
