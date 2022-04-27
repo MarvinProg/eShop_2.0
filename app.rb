@@ -47,5 +47,16 @@ def orders_line_parse input_orders
     arr_1.push(arr_2)
   end
 
+  # @arr_test = arr_1 
+  # @total = 0
+
+  # @arr_test.each do |a|
+  #   a.each do |str|
+  #     count = str[1].to_i
+  #     @total += count
+  #     @total_price = @total
+  #   end
+  # end
+
   return arr_1
 end
