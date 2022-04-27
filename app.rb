@@ -21,8 +21,8 @@ get '/about_us' do
 end
 
 post '/cart' do 
-	input_orders = params[:orders]
-	@orders = orders_line_parse input_orders
+	@input_orders = params[:input_orders]
+	@orders = orders_line_parse @input_orders
 
   @orders.each do |item|
     item[0] = Product.find(item[0])
@@ -32,7 +32,7 @@ post '/cart' do
 end
 
 def orders_line_parse input_orders 
-  str_1 = input_orders.split(",")
+  str_1 = @input_orders.split(",")
 
   arr_1 = []
 
