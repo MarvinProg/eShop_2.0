@@ -57,3 +57,8 @@ function get_orders_cart() {
 
   return orders;
 }
+
+function order_cancel() {
+  alert('aaa');
+  return false;
+}
