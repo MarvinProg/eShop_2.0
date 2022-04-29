@@ -62,3 +62,8 @@ def orders_line_parse input_orders
 
   return arr_1
 end
+
+post '/order_place' do 
+  @order = Order.create params[:order]
+  erb :order_place
+end
