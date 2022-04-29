@@ -37,9 +37,9 @@
 <form action="/order_place" method="POST" role="form"> 
   <input name="order[input_orders]" type="hidden" value="<%= @input_orders %>">
 
-  <p>Enter name: <input type="text" name="order[name_user]" placeholder="You name" ></p> 
-  <p>Enter phone: <input type="text" name="order[phone_user]" placeholder="You phone" ></p>
+  <p>Enter name: <input type="text" name="order[name_customer]" placeholder="You name" ></p> 
+  <p>Enter phone: <input type="text" name="order[phone_customer]" placeholder="You phone" ></p>
   <p>Enter place of delivery: <input type="text" name="order[place_delivery]" placeholder="You address"></p>
   <br/>
-  <input type="submit" class="btn btn-primary">
+  <button type="submit" class="btn btn-primary">Оформить заказ</button>
 </form>

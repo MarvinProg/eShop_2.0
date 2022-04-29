@@ -8,7 +8,9 @@ require 'sqlite3'
 set :database, {adapter: "sqlite3", database: "my_db_eshop.db"}
 
 class Product < ActiveRecord::Base
-	
+end
+
+class Order < ActiveRecord::Base
 end
 
 get '/' do
